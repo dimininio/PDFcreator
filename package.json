@@ -1,0 +1,12 @@
+{
+  "name": "pdfcreator",
+  "description":"The PDF generation module for Mansa",
+  "version": "0.1.0",
+  "main": "./lib",
+  "dependencies":{
+      "pdfkit":">=0.7.2"
+  },
+
+  "author": "BPI Ukraine"
+
+}
