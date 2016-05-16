@@ -37,6 +37,8 @@ function fillForm(form,register){
 
 
 
+
+
 module.export.create = function(form,register,path){
     
     if (register!=undefined) 
@@ -50,6 +52,13 @@ module.export.create = function(form,register,path){
                      .font
     
     
+        
+    
+    //PDFkit.create();
+}
+
+
+module.export.create = function(formObject,dataObject,path){
     
     
     
