@@ -6,6 +6,12 @@
   "dependencies":{
       "pdfkit":">=0.7.2"
   },
+  "devDependencies": {
+      "tap": ">=5.7.1"
+  },   
+  "scripts": {
+	"test": "tap test/pdftests.js"
+  },
 
   "author": "BPI Ukraine"
 

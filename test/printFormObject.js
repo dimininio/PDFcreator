@@ -85,7 +85,7 @@ var printFormObject = {
                     characterGap:1
                 },
                 lineGap: 1,
-                ref: "Inv.Code"                
+                ref: "Invoice.InvoiceNr"                
             },                         
             {
                 type: "rectangle",
@@ -115,7 +115,7 @@ var printFormObject = {
                 wordwrap:false,
                 align:"left", //temp
                 rowsNumber:4,
-                value:["Cheese","Bread","Milk","Shirt"],
+                value:[],
                 font: {
                     size: 12,
                     style: "Times", //temp
@@ -127,7 +127,7 @@ var printFormObject = {
                     characterGap:1
                 },
                 lineGap: 1,
-                ref: "Item.Name"                
+                ref: "InvoiceRows.Code"                
             },
             {
                 type: "field",
@@ -142,7 +142,7 @@ var printFormObject = {
                 wordwrap:false,
                 align:"left", //temp
                 rowsNumber:4,
-                value:["90","4","10","299"],
+                value:[],
                 font: {
                     size: 12,
                     style: "Times", //temp
@@ -154,7 +154,7 @@ var printFormObject = {
                     characterGap:1
                 },
                 lineGap: 1,
-                ref: "Item.Price"                
+                ref: "InvoiceRows.Price"                
             },            
         ],
         footer:[]
@@ -169,14 +169,4 @@ var printFormObject = {
 
 
 
-
-console.log(printFormObject);
-
-console.log(printFormObject.data.body[2].name);
-
-var property = "yPos";
-
-console.log(printFormObject.data.body[2][property]);
-
-
-
+module.exports = printFormObject;
